@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroMentorAi​</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>AgroMentorAi​</h1>
+    <select id="languageSelect">
+      <option value="en">English</option>
+      <option value="hi">हिंदी (Hindi)</option>
+      <option value="mr">मराठी (Marathi)</option>
+      <option value="bn">বাংলা (Bengali)</option>
+      <option value="ta">தமிழ் (Tamil)</option>
+      <option value="te">తెలుగు (Telugu)</option>
+      <option value="gu">ગુજરાતી (Gujarati)</option>
+      <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+      <option value="kn">ಕನ್ನಡ (Kannada)</option>
+      <option value="ml">മലയാളം (Malayalam)</option>
+      <option value="or">ଓଡ଼ିଆ (Odia)</option>
+      <option value="ur">اردو (Urdu)</option>
+    </select>
+  </header>
+
+  <main>
+    <!-- Only first button opens chat -->
+    <button onclick="openChat()"><h3> AI-Chatbot</h3></button>
+    <button onclick="showMessage(2)"><h3> Real-Time Market</h3></button>
+    <button onclick="showMessage(3)"><h3> Personalized & Timely Advisory</h3></button>
+  </main>
+
+  <!-- Farming Assistant Chat -->
+  <div id="chatWindow" class="chat-hidden">
+    <div class="chat-header">
+      <h3>🤖chatbot AI</h3>
+      <button onclick="closeChat()">❌</button>
+    </div>
+    <div id="chatBody" class="chat-body"></div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your question...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
