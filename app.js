@@ -48,7 +48,7 @@ function sendMessage() {
   // Bot reply (demo)
   let botMsg = document.createElement("p");
   botMsg.classList.add("bot");
-  botMsg.innerText = "🤖 Farming Assistant: Thank you for your question. (Demo reply)";
+  botMsg.innerText = "🤖 Farming Assistant: Thank you for your question.";
   chatBody.appendChild(botMsg);
 
   chatBody.scrollTop = chatBody.scrollHeight; // Auto-scroll
